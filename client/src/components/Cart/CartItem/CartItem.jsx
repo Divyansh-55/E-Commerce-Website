@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Context } from "../../../utils/context";
 import { MdClose } from "react-icons/md";
-import "./CartItem.scss";
 
+import "./CartItem.scss";
 const CartItem = () => {
     const { cartItems, handleRemoveFromCart, handleCartProductQuantity } =
         useContext(Context);
@@ -18,7 +18,7 @@ const CartItem = () => {
                     <div className="image-container">
                         <img
                             src={
-                                process.env.REACT_APP_DEV_URL +
+                                process.env.REACT_APP_STRIPE_APP_DEV_URL +
                                 item.attributes.img.data[0].attributes.url
                             }
                         />
@@ -50,8 +50,7 @@ const CartItem = () => {
                             <span>{item.attributes.quantity}</span>
                             <span>x</span>
                             <span className="highlight">
-                                <span>&#8377;{item.attributes.Price }</span>
-                                {" = "}
+                                <span>&#8377;</span>
                                 {item.attributes.Price *
                                     item.attributes.quantity}
                             </span>

@@ -1,28 +1,43 @@
-import "./Newsletter.scss";
+import React from "react";
 import {
     FaFacebookF,
     FaTwitter,
     FaInstagram,
-    FaLinkedin,
-}from "react-icons/fa"; 
+    FaLinkedinIn,
+} from "react-icons/fa";
+import "./Newsletter.scss";
 const Newsletter = () => {
-    return <div className="newsletter-section">
-        <div className="newsletter-content">
-            <div className="small-text">NewsLwtter</div>
-            <span className="big-text">Sign up for, Latest Updates and Offers</span>
-            <div className="form">
-                <input type="text" placeholder="Email Address" />
-                <button>Subscribe</button>
-            </div>
-            <div className="text">Will be used in accordance with our Privacy Policy</div>
-            <div className="social-icons">
-            <a href="https://www.facebook.com/" target="blank"> <div className="icon" ><FaFacebookF/></div></a>
-            <a href="https://www.twitter.com/" target="blank"><div className="icon"><FaTwitter/></div></a>
-            <a href="https://www.instagram.com/" target="blank"> <div className="icon"><FaInstagram/></div></a>
-            <a href="https://www.linkedin.com/" target="blank"><div className="icon"><FaLinkedin/></div></a>
+    return (
+        <div className="newsletter-section">
+            <div className="newsletter-content">
+                <span className="small-text">Newsletter</span>
+                <span className="big-text">
+                    Sign up for latest updates and offers
+                </span>
+                <div className="form">
+                    <input type="text" placeholder="Email Address" />
+                    <button>Subscribe</button>
+                </div>
+                <span className="text">
+                    Will be used in accordance with our Privacy Policy
+                </span>
+                <span className="social-icons">
+                    <div className="icon">
+                        <FaLinkedinIn size={14} />
+                    </div>
+                    <div className="icon">
+                        <FaFacebookF size={14} />
+                    </div>
+                    <div className="icon">
+                        <FaTwitter size={14} />
+                    </div>
+                    <div className="icon">
+                        <FaInstagram size={14} />
+                    </div>
+                </span>
             </div>
         </div>
-    </div>
+    );
 };
 
 export default Newsletter;

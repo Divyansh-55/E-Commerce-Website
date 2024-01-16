@@ -2,19 +2,17 @@ import React from "react";
 import "./Footer.scss";
 import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";
 import Payment from "../../assets/payments.png";
-
 const Footer = () => {
-    
     return (
         <div className="footer">
             <div className="footer-content">
                 <div className="col">
-                    <div className="title" onClick={()=>{"/readmore"}}>About</div>
+                    <div className="title">About</div>
                     <div className="text">
-                    DIVSTORE is your trusted online shopping destination. We are committed to providing 
-                    you with a seamless shopping experience, offering a wide range of high-quality 
-                    products, and exceptional customer service.<br/> Thank you for choosing us for your 
-                    shopping needs!
+                        Voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi architecto beatae vitae dicta sunt explicabo eaque
+                        ipsa quae ab illo.
                     </div>
                 </div>
                 <div className="col">
@@ -32,7 +30,7 @@ const Footer = () => {
                     </div>
                     <div className="c-item">
                         <FaEnvelope />
-                        <div className="text">Email: store@jsdev.com</div>
+                        <div className="text">Email: divyanshgupta0103@gmail.com</div>
                     </div>
                 </div>
                 <div className="col">
@@ -57,10 +55,10 @@ const Footer = () => {
             <div className="bottom-bar">
                 <div className="bottom-bar-content">
                     <span className="text">
-                        DIVSTORE 2022 CREATED BY DIV DEV. PREMIUM E-COMMERCE
+                        JSDEVSTORE 2022 CREATED BY JS DEV. PREMIUM E-COMMERCE
                         SOLUTIONS.
                     </span>
-                    <img src={Payment} alt="Payment img"/>
+                    <img src={Payment} />
                 </div>
             </div>
         </div>
