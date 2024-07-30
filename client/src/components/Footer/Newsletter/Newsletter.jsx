@@ -1,10 +1,10 @@
 import React from "react";
 import {
     FaFacebookF,
-    FaTwitter,
     FaInstagram,
     FaLinkedinIn,
 } from "react-icons/fa";
+import { FaXTwitter  } from "react-icons/fa6";
 import "./Newsletter.scss";
 const Newsletter = () => {
     return (
@@ -29,7 +29,7 @@ const Newsletter = () => {
                         <FaFacebookF size={14} />
                     </div>
                     <div className="icon">
-                        <FaTwitter size={14} />
+                        <FaXTwitter  size={14} />
                     </div>
                     <div className="icon">
                         <FaInstagram size={14} />

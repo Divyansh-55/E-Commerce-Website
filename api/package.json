@@ -7,7 +7,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "preinstall": "npx npm-force-resolutions"
   },
   "dependencies": {
     "@strapi/strapi": "4.7.0", 
@@ -22,8 +23,11 @@
     "uuid": "8061e280-ba0b-4653-9339-e60493c0def4"
   },
   "engines": {
-    "node": ">=16.0.0 <=20.x.x",
+    "node": ">=14.19.1 <=20.x.x",
     "npm": ">=6.0.0"
+  },
+  "resolutions": {
+    "@strapi/*": "latest"
   },
   "license": "MIT"
 }

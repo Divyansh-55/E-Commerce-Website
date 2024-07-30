@@ -15,15 +15,16 @@
         align-items: center;
         margin: 0 auto;
         text-align: center;
+        
         .text {
             margin-bottom: 20px;
             font-size: 14px;
-            color: rgba(0, 0, 0, 0.5);
+            color: rgba(0, 0, 0, 0.671);
         }
         .small-text {
             margin-bottom: 15px;
             text-transform: uppercase;
-            color: rgba(0, 0, 0, 0.5);
+            color: rgba(0, 0, 0, 0.733);
         }
         .big-text {
             margin-bottom: 20px;
@@ -82,6 +83,9 @@
                 align-items: center;
                 justify-content: center;
                 color: white;
+            }
+            :hover{
+                cursor: pointer;
             }
         }
     }

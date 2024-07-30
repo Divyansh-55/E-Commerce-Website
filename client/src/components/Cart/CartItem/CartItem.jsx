@@ -51,8 +51,11 @@ const CartItem = () => {
                             <span>x</span>
                             <span className="highlight">
                                 <span>&#8377;</span>
-                                {item.attributes.Price *
-                                    item.attributes.quantity}
+                                {item.attributes.Price }
+                            </span>
+                            <span className="highlight">
+                                <big>=</big> <span> &#8377;</span>
+                                {item.attributes.Price*item.attributes.quantity }
                             </span>
                         </div>
                     </div>

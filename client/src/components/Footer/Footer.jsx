@@ -20,13 +20,13 @@ const Footer = () => {
                     <div className="c-item">
                         <FaLocationArrow />
                         <div className="text">
-                            Kayaloram Rd, Punnamada, Kottankulangara, Alappuzha,
-                            Kerala, 688006
+                            Pilibhit, Uttar Pradesh, 
+                            INDIA - 262001
                         </div>
                     </div>
                     <div className="c-item">
                         <FaMobileAlt />
-                        <div className="text">Phone: 0471 272 0261</div>
+                        <div className="text">Phone: +91 9548903164</div>
                     </div>
                     <div className="c-item">
                         <FaEnvelope />

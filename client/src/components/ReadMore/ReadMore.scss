@@ -2,10 +2,11 @@
 
 .read-more {
     background-color: #f8f8f8;
+    background-image: url("../../assets/background.jpg");
     padding: 30px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 20px 0;
+    // margin: 20px 0;
   
     .read-more-content {
       max-width: 800px;
@@ -14,7 +15,7 @@
       h2 {
         font-size: 24px;
         margin: 20px 0 15px 0;
-        color: #333; /* Heading text color */
+        color: #141414; /* Heading text color */
       }
       .span{
         font-weight: 800;
@@ -24,7 +25,7 @@
       p {
         font-size: 16px;
         line-height: 1.5;
-        color: #666 !important; /* Paragraph text color */
+        color: #333232 !important; /* Paragraph text color */
       }
     }
   
