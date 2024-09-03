@@ -11,10 +11,12 @@
     "preinstall": "npx npm-force-resolutions"
   },
   "dependencies": {
-    "@strapi/strapi": "4.7.0", 
-    "@strapi/plugin-users-permissions": "4.7.0",
     "@strapi/plugin-i18n": "4.7.0",
-    "better-sqlite3": "7.4.6"
+    "@strapi/plugin-users-permissions": "4.7.0",
+    "@strapi/strapi": "^4.7.0",
+    "better-sqlite3": "7.4.6",
+    "node": "^16.16.0",
+    "stripe": "^16.9.0"
   },
   "author": {
     "name": "A Strapi developer"

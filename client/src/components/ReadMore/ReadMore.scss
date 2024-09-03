@@ -1,12 +1,11 @@
 /* ReadMore.scss */
 
 .read-more {
-    background-color: #f8f8f8;
     background-image: url("../../assets/background.jpg");
     padding: 30px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    // margin: 20px 0;
+    overflow: hidden;
   
     .read-more-content {
       max-width: 800px;

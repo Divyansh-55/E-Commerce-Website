@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { MdClose } from "react-icons/md";
 import "./Search.scss";
 import useFetch from "../../../hooks/useFetch";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";     
 
 const Search = ({ setSearchModal }) => {
     const [query, setQuery] = useState("");
@@ -36,24 +36,21 @@ const Search = ({ setSearchModal }) => {
                 />
             </div>
             <div className="search-result-content">
-                {!data?.data?.length && (
+         
                     <div className="start-msg">
                         Start typing to see products you are looking for.
                     </div>
-                )}
                 <div className="search-results">
                     {data?.data?.map((item) => (
                         <div
                             className="search-result-item"
-                            // key={item.id}
                             onClick={() => {
                                 navigate("/product/" + item.id);
                                 setSearchModal(false);
                             }}
                         >
                             <div className="image-container">
-                                <img
-                                    src={
+                                <img src={
                                         process.env
                                             .REACT_APP_STRIPE_APP_DEV_URL +
                                         item.attributes.img.data[0].attributes
