@@ -25,7 +25,10 @@ const Header = () => {
     }, []);
 
     const { cartCount, showCart, setShowCart } = useContext(Context);
-
+    const goToRandomCategory = () => {
+        const randomId = Math.floor(Math.random() * 4); 
+        navigate(`/category/${randomId}`);
+    };
     return (
         <>
             <header
@@ -35,7 +38,7 @@ const Header = () => {
                     <ul className="left">
                         <li onClick={() => navigate("/")}>Home</li>
                         <li onClick={() => navigate("/readmore")}>About</li>
-                        <li onClick={() => navigate("/category")}>Categories</li>
+                        <li onClick={goToRandomCategory}>Categories</li>
 
                     </ul>
                     <div className="center" onClick={() => navigate("/")}>

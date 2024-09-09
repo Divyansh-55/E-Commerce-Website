@@ -9,10 +9,9 @@ const Footer = () => {
                 <div className="col">
                     <div className="title">About</div>
                     <div className="text">
-                        Voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo eaque
-                        ipsa quae ab illo.
+                    Welcome to our " DIVSTORE ", where your shopping experience is our top priority. 
+                    We're dedicated to providing you with a seamless and enjoyable online shopping 
+                    experience. Here's a glimpse of what we have to offer:
                     </div>
                 </div>
                 <div className="col">
