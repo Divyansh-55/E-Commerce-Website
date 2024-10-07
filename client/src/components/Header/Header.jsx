@@ -26,7 +26,7 @@ const Header = () => {
 
     const { cartCount, showCart, setShowCart } = useContext(Context);
     const goToRandomCategory = () => {
-        const randomId = Math.floor(Math.random() * 4); 
+        const randomId = Math.floor(Math.random() % 4)+1; 
         navigate(`/category/${randomId}`);
     };
     return (
